@@ -7,7 +7,7 @@ In assignment 3 you created a chatbot from a movie database.  In this group proj
 In your group, come up with an idea of what you want to make.  Once you do that, research what data is out there and if you need to make a database or if you just want to use a database that exists already.  You are also welcomed to see if there are any python modules that you could use to help you along the way.
 
 If you want the simplest solution to this project, then you can simply expand on the solution that we did in class.  Add at least 20 movies to the database in varying years, add at least one more action function, and add at least five more searchest to the `pa_list`.  
-
+cheeseman
 You are receiving a blank slate here.  You will need to create the entire structure for this project.  Feel free to adapt in any way you would like to.  I will be asking what you will be working on at the start of the next class period so that you have time to decide.  HAVE FUN with this!!
 
 ## How you will be graded
