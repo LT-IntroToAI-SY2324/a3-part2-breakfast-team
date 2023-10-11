@@ -1,12 +1,51 @@
 from typing import List, Tuple
 foods_db: List[Tuple[str, str, int, List[str]]] = [
     (
-        "pancakes", #The Dish
+        "Pancakes", #The Dish
         [
-
+            "Flour", "Baking Powder", "Sugar", "Salt", "Milk", "Butter", "Eggs"
         ]
     ),
     (
-        
+        "Ice Cream",
+        [
+            "Milk", "Heavy Whipping Cream", "Sugar", "Vanilla"
+        ]
+    )
+    (
+        "American Breakfast",
+        [
+            "Pancakes", "Bacon", "Eggs", "Hash Browns"
+        ]
+    )
+    (
+        "Cereal", 
+        [
+            "Milk", "Fruits", "Cereal of choice"
+        ]
+    )
+    (
+        "English Breakfast",
+        [
+            "Tomatoes", "Mushrooms", "English Beans", "Bacon", "Sausage", "Eggs"
+        ]
+    )
+    (
+        "Huevos Rancheros",
+        [
+            "Tortillas", "Refried Beans", "Eggs", "Cheese", "Jalapenos"
+        ]
+    )
+    (
+        "Hash Browns",
+        [
+            "Potatoes", "Flour", "Salt", "Pepper"
+        ]
+    )
+    (
+        "Chicken & Waffles",
+        [
+            "Fried Chicken", "Waffles", "Syrup"
+        ]
     )
 ]
