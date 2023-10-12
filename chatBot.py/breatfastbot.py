@@ -8,7 +8,11 @@ def get_dish(foodAndIngredients: Tuple[str, List[str]]) -> str:
 def get_ingredients(foodAndIngredients: Tuple[str, List[str]]) -> List[str]:
     return foodAndIngredients[1]
 
-def dish_by_ingredients
+def dish_by_ingredients(matches:List[str]) -> List[str]:
+    results = []
+    for foodAndIngredients in foods_db: 
+        if matches[1] in get_ingredients(foodAndIngredients):
+            results.append(get_dish())
 # def title_by_actor(matches: List[str]) -> List[str]:
 #     """Finds titles of all movies that the given actor was in
 
