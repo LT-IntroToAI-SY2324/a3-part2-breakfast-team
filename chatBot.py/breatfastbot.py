@@ -18,6 +18,13 @@ def ingredients_by_dish(matches: List[str]) -> List[str]:
             results = get_ingredients(dish)
     return results
 
+def dishes_by_ingredient(): 
+
+def dish_by_ingredients():
+
+def what_to_make(): 
+
+
 
 
 
