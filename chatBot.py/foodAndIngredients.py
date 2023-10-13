@@ -11,11 +11,11 @@ foods_db: List[Tuple[str, List[str]]] = [
         [
             "Milk", "Heavy Whipping Cream", "Sugar", "Vanilla"
         ]
-    )
+    ),
     (
-        "American Breakfast",
+        "Hash Browns",
         [
-            "Pancakes", "Bacon", "Eggs", "Hash Browns"
+            "Potatoes", "Flour", "Salt", "Pepper"
         ]
     )
 ]
