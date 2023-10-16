@@ -18,7 +18,13 @@ def ingredients_by_dish(matches: List[str]) -> List[str]:
             results = get_ingredients(dish)
     return results
 
-def dishes_by_ingredient(): 
+def dishes_by_ingredient(matches: List[str]) -> List[str]: 
+    results = []
+    for dish in foods_db:
+        dishIngr = dish[1]
+        if dish in dishIngr:
+            results.append(dish)
+    return results
 
 def dish_by_ingredients():
 
@@ -32,6 +38,13 @@ if __name__ == "__main__":
     assert isinstance(ingredients_by_dish(["Pancakes"]), list), "ingredients_by_dish not returning a list"
 
     assert sorted(ingredients_by_dish(["Pancakes"])) == sorted(
+        [
+            "Flour", "Baking Powder", "Sugar", "Salt", "Milk", "Butter", "Eggs"
+        ]
+
+    assert isinstance(), list), "ingredients_by_dish not returning a list"
+
+    assert sorted() == sorted(
         [
             "Flour", "Baking Powder", "Sugar", "Salt", "Milk", "Butter", "Eggs"
         ]
