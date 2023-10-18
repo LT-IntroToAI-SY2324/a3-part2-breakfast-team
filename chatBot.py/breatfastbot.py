@@ -20,30 +20,10 @@ def ingredients_by_dish(matches: List[str]) -> List[str]:
 
 def dishes_by_ingredient(matches: str) -> List[str]: 
     results = []
-    temp = []
     for dish in foods_db:
         dishIngr = dish[1]
-        print(dishIngr)
-        print(str)
-        if str in dishIngr:
-            temp.insert(dishIngr)
-    print(dishIngr)
-    print(temp)
-    print(results)
-    return results
-
-# def dish_by_ingredients(matches: List[str]) -> List[str]:
-    results = []
-    temp = []
-    for dish in foods_db:
-        dishIngr = dish[1]
-        print(dishIngr)
-        print(str)
-        if str in dishIngr:
-            temp.insert(dishIngr)
-    print(dishIngr)
-    print(temp)
-    print(results)
+        if matches in dishIngr:
+            results.append(dish[0])
     return results
 
 def dish_by_ingredients(matches: List[str]) -> List[str]:
@@ -52,11 +32,18 @@ def dish_by_ingredients(matches: List[str]) -> List[str]:
         dishIngr = dish[1]
         if dish in dishIngr:
             results.append(dish)
-        return(results)
+    return(results)
 
-
-def what_to_make(): 
-
+def what_to_make(matches: List[str]) -> List[str]: 
+    results = []
+    for dish in foods_db:
+        dishIngr = dish[1]
+        canMake = 0 
+        if i in dishIngr:
+            canMake += 1
+            if canMake >= len(dishIngr):
+                results.append(dish[0])
+    return results
 
 
 
