@@ -39,8 +39,9 @@ def what_to_make(matches: List[str]) -> List[str]:
     for dish in foods_db:
         dishIngr = dish[1]
         canMake = 0 
-        if i in dishIngr:
-            canMake += 1
+        for i in matches:
+            if i in dishIngr:
+                canMake += 1
             if canMake >= len(dishIngr):
                 results.append(dish[0])
     return results
@@ -51,6 +52,7 @@ def what_to_make(matches: List[str]) -> List[str]:
 if __name__ == "__main__":
     assert isinstance(ingredients_by_dish(["Pancakes"]), list), "ingredients_by_dish not returning a list"
     assert isinstance(dishes_by_ingredient("Milk"), list), "ingredients_by_dish not returning a list"
+    assert isinstance(what_to_make(["Potatoes", "Flour", "Salt", "Sugar", "Milk", "Butter", "Eggs"]), list), "ingredients_by_dish not returning a list"
 
     assert sorted(ingredients_by_dish(["Pancakes"])) == sorted(
         [
@@ -59,6 +61,11 @@ if __name__ == "__main__":
     )
     assert sorted(dishes_by_ingredient("Milk")) == sorted(
         [
-            "Pancakes", "Ice Cream"
+            "Pancakes", "Ice Cream", "Cereal"
+        ]
+    )
+    assert sorted(what_to_make(["Potatoes", "Flour", "Salt", "Sugar", "Milk", "Butter", "Eggs"])) == sorted(
+        [
+            "Pancakes", "Hash Browns"
         ]
     )

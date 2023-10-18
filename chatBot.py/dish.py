@@ -39,7 +39,7 @@ foods_db: List[Tuple[str, List[str]]] = [
     (
         "Hash Browns",
         [
-            "potatoes", "Four", "Salt" ,"Pepper"
+            "Potatoes", "Flour", "Salt" ,"Pepper"
         ]
     ), 
     (
