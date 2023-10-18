@@ -13,12 +13,6 @@ foods_db: List[Tuple[str, List[str]]] = [
         ]
     ),
     (
-        "Hash Browns",
-        [
-            "Potatoes", "Flour", "Salt", "Pepper"
-        ]
-    ),
-    (
         "American Breakfast",
         [
             "Pancakes", "Bacon", "Eggs", "Hash Browns"
