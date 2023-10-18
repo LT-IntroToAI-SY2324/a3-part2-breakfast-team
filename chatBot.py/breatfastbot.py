@@ -26,7 +26,13 @@ def dishes_by_ingredient(matches: List[str]) -> List[str]:
             results.append(dish)
     return results
 
-def dish_by_ingredients():
+def dish_by_ingredients(matches: List[str]) -> List[str]:
+    results = []
+    for dish in foods_db:
+        dishIngr = dish[1]
+        if dish in dishIngr:
+            results.append(dish)
+    return results
 
 def what_to_make(): 
 
